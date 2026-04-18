@@ -1,16 +1,182 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f6f6f6;
+    }
+
+    .block-heading {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .block-heading h2 {
+      color: #3b99e0;
+    }
+
+    .product {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .summary {
+      background-color: #f7fbff;
+      padding: 20px;
+      border-top: 2px solid #5ea4f3;
+    }
+
+    .summary h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .summary .row {
+      margin-bottom: 10px;
+    }
+
+    .summary button {
+      width: 100%;
+      background-color: #3b99e0;
+      color: white;
+      border: none;
+      padding: 10px;
+    }
+  </style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container mt-5">
+
+  <!-- Heading -->
+  <div class="block-heading">
+    <h2>Shopping cart</h2>
+    <p>The customer is very important, the customer will be followed by the customer.</p>
+  </div>
+
+  <div class="row">
+
+    <!-- LEFT SIDE (Products) -->
+    <div class="col-lg-8">
+
+      <!-- Product 1 -->
+      <div class="product">
+        <div class="row align-items-center">
+
+          <div class="col-md-2">
+            <img src="https://via.placeholder.com/100" class="img-fluid">
+          </div>
+
+          <div class="col-md-4">
+            <a href="#">I am very sorry</a>
+            <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+
+          <div class="col-md-3">
+            <label>Quantity:</label>
+            <input type="number" class="form-control" value="0">
+          </div>
+
+          <div class="col-md-3">
+            <h5>$120</h5>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <div class="row align-items-center">
+
+          <div class="col-md-2">
+            <img src="https://via.placeholder.com/100" class="img-fluid">
+          </div>
+
+          <div class="col-md-4">
+            <a href="#">I am very sorry</a>
+            <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+
+          <div class="col-md-3">
+            <label>Quantity:</label>
+            <input type="number" class="form-control" value="1">
+          </div>
+
+          <div class="col-md-3">
+            <h5>$120</h5>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <div class="row align-items-center">
+
+          <div class="col-md-2">
+            <img src="https://via.placeholder.com/100" class="img-fluid">
+          </div>
+
+          <div class="col-md-4">
+            <a href="#">I am very sorry</a>
+            <p>Display: 5 inches<br>RAM: 4GB<br>Memory: 32GB</p>
+          </div>
+
+          <div class="col-md-3">
+            <label>Quantity:</label>
+            <input type="number" class="form-control" value="1">
+          </div>
+
+          <div class="col-md-3">
+            <h5>$120</h5>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE (Summary) -->
+    <div class="col-lg-4">
+
+      <div class="summary">
+        <h3>Summary</h3>
+
+        <div class="row">
+          <div class="col">Subtotal</div>
+          <div class="col text-end">$360</div>
+        </div>
+
+        <div class="row">
+          <div class="col">Discount</div>
+          <div class="col text-end">$0</div>
+        </div>
+
+        <div class="row">
+          <div class="col">Shipping</div>
+          <div class="col text-end">$0</div>
+        </div>
+
+        <div class="row fw-bold">
+          <div class="col">Total</div>
+          <div class="col text-end">$360</div>
+        </div>
+
+        <button class="btn mt-3">Checkout</button>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
 </body>
-
 </html>
